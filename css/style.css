@@ -1,0 +1,99 @@
+/* Variables para colores */
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --primary-active: #003f7f;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --heading-color: #222;
+    --subheading-color: #555;
+    --button-shadow: rgba(0, 123, 255, 0.4);
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Section styling */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--subheading-color);
+    margin-bottom: 20px;
+}
+
+/* Buttons container */
+#con-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 6px 12px var(--button-shadow);
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: var(--primary-active);
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FontAwesome icon styling */
+.fa-circle-left {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-circle-left:hover {
+    color: var(--primary-hover);
+    transform: translateX(-5px);
+}
+
+
+
